@@ -1,0 +1,182 @@
+@font-face {
+  font-family: "Gucci Sans Pro";
+  src: url("./fonts/GucciSansPro-Bold.woff2") format("woff2");
+}
+
+:root {
+  --header: #fff;
+  --header-background: transparent;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Gucci Sans Pro", Helvetica, Arial, sans-serif;
+}
+
+.header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background: #fff;
+  transition: background 0.3s;
+  z-index: 2;
+}
+
+.header[data-transparent="true"] {
+  background: transparent;
+}
+
+.header-container {
+  position: relative;
+  z-index: 100;
+  color: var(--header-background);
+  padding: 24px 64px;
+}
+
+.header-content {
+  width: 100%;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  width: 143px;
+  height: 24px;
+  margin: 0 auto;
+  margin-top: -24px;
+  transition: opacity 0.8s cubic-bezier(0.5, 0, 0, 1),
+    width 0.8s cubic-bezier(0.5, 0, 0, 1),
+    transform 0.8s cubic-bezier(0.5, 0, 0, 1),
+    margin-top 0.8s cubic-bezier(0.5, 0, 0, 1),
+    padding-bottom 0.8s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.header-logo-style {
+  -webkit-box-flex: unset;
+  flex-grow: unset;
+  text-decoration: none;
+}
+
+.header-logo[data-expanded="true"] {
+  width: 100%;
+  transform: translate3d(0px, 24px, 0px);
+  height: auto;
+  margin-top: 0;
+  padding-bottom: 24px;
+}
+
+._brand_icon_113d3_1 {
+  display: block;
+}
+
+.header-items {
+  display: flex;
+  align-items: center;
+}
+
+.button-none {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0;
+  background: none;
+  border: none;
+  outline: none;
+  font-family: "Gucci Sans Pro", Helvetica, Arial, sans-serif;
+  cursor: pointer;
+}
+
+.header-item {
+  font-size: 0.75rem;
+  padding-left: 1.5rem;
+  color: var(--header);
+  transition: color 0.3s;
+}
+
+.contact-us {
+  opacity: 0;
+  pointer-events: unset;
+  transition: opacity 0.3s;
+  cursor: auto;
+}
+
+path {
+  transition: fill 0.3s;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.button {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 16px 24px;
+  font-family: "Gucci Sans Pro", Helvetica, Arial, sans-serif;
+  background-color: #fff;
+  border-radius: 2px;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.full-bleed-container {
+  height: auto;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.full-bleed {
+  width: 100%;
+  filter: brightness(0.8);
+  height: auto;
+  backface-visibility: hidden;
+  object-fit: cover;
+}
+
+.full-bleed-content {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  bottom: 36px;
+  gap: 24px;
+}
+
+.title {
+  font-size: 2rem;
+  letter-spacing: -0.03em;
+  line-height: 3rem;
+}
+
+.padding-container {
+  width: calc(100% - 48px);
+  padding: 16px;
+  position: relative;
+  display: flex;
+  gap: 1rem;
+}
+
+figure {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+  unicode-bidi: isolate;
+}
+
+.women-figure {
+  background-color: var(--g-color-background);
+  margin: 0px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
